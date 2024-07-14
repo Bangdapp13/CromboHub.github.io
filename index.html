@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CromboHub - Cromboloni</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- data-aos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #998040;
+        }
+        .navbar, .footer {
+            background-color: #5B4C25 !important;
+        }
+        .nav-link {
+            color: white !important;
+        }       
+        .navbar-nav .nav-link.active {
+            background-color: #CF8943;
+            color: white !important;
+            border-radius: 5px;
+        }
+        .jumbotron {
+        background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./image/bg.jpeg');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 100px 0;
+        text-align: center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+        .testimonial {
+            border-left: 4px solid #5B4C25;
+            padding-left: 15px;
+        }
+        .bg-cokmud {
+            background-color: #5B4C25;
+        }
+        .btn {
+            background-color: #CF8943 !important;
+            color: white;
+        }
+        .btn:hover {
+            background-color: #CF8943 !important;
+            color: white;
+        }
+        #back-to-top {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            display: none;
+            z-index: 99;
+        }
+        .produk-img {
+            overflow: hidden;
+        }
+        .produk-img img {
+            transition: transform 0.5s ease;
+        }
+        .produk-img:hover img {
+            transform: scale(1.1);
+        }
+        .produk-card {
+            overflow: hidden;
+        }
+        .produk-card .card {
+            transition: transform 0.5s ease;
+        }
+        .produk-card:hover .card {
+            transform: scale(1.1);
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .card-title {
+            color: #5B4C25;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand fw-bold text-white" href="#">CromboHub</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Home Section -->
+<section id="home" class="jumbotron text-center">
+    <div class="container">
+        <h1 class="display-4 fw-bold" data-aos="fade-up">Welcome to CromboHub</h1>
+        <p class="lead" data-aos="fade-up">Discover the amazing taste of Cromboloni</p>
+        <a href="products.html" data-aos="fade-up" class="btn btn-lg">Shop Now</a>
+    </div>
+</section>
+
+<!-- Latest Products Section -->
+<section id="latest-products" class="py-5">
+    <div class="container text-center">
+        <h2 class="mb-3 display-5 fw-bold" data-aos="fade-up">Latest Products</h2>
+        <div class="row mt-5">
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="card mb-4 produk-img">
+                    <img src="image/1.jfif" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h2 class="card-title">Bluberry <span style="color: rgb(145, 71, 145);">Chrumb</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="card mb-4 produk-img">
+                    <img src="image/2.jfif" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h2 class="card-title">Strawberry <span style="color: rgb(243, 50, 179);">Chrumb</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="card mb-4 produk-img">
+                    <img src="image/3.jfif" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h2 class="card-title">Corn <span style="color: rgb(224, 195, 98);">Chrumb</span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Service Section -->
+<section id="service" class="py-5 bg-cokmud">
+    <div class="container text-center">
+        <h2 class="mb-3 display-5 fw-bold text-white" data-aos="fade-up">Our Services</h2>
+        <div class="row mt-5">
+            <div class="col-md-4 produk-card" data-aos="fade-up">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Free Shipping</h5>
+                        <p class="card-text">Enjoy free shipping on all orders.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 produk-card" data-aos="fade-up">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Quality Products</h5>
+                        <p class="card-text">We offer only the finest quality Cromboloni.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 produk-card" data-aos="fade-up">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Customer Support</h5>
+                        <p class="card-text">24/7 customer support available.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonial Section -->
+<section id="testimonials" class="py-5">
+    <div class="container">
+        <h2 class="mb-3 display-5 fw-bold text-center" data-aos="fade-up">Testimonials</h2>
+        <div class="row mt-5 ">
+            <div class="col-md-4 mb-4 produk-card" data-aos="fade-up">
+                <div class="testimonial">
+                    <p>"Great product! My family loves Cromboloni."</p>
+                    <cite>- John Doe</cite>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 produk-card" data-aos="fade-up">
+                <div class="testimonial">
+                    <p>"The taste is amazing. Definitely recommend!"</p>
+                    <cite>- Jane Smith</cite>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 produk-card" data-aos="fade-up">
+                <div class="testimonial">
+                    <p>"Best snack ever. Will buy again!"</p>
+                    <cite>- Michael Johnson</cite>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer text-white text-center py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Follow Us</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Facebook</a></li>
+                    <li><a href="#" class="text-white">Twitter</a></li>
+                    <li><a href="#" class="text-white">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <ul class="list-unstyled">
+                    <li>Email: info@crombohub.com</li>
+                    <li>Phone: +62 812-2517-2900</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Address</h5>
+                <p>123 Crombo Street, Cromboland</p>
+                <p>CromboCity, Zip Code</p>
+                <p>Country</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col">
+                <p>&copy; 2024 CromboHub. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Back to Top Button -->
+<button id="back-to-top" class="btn" title="Go to top" data-aos="fade-left"><i class="fas fa-arrow-up"></i></button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script>
+    AOS.init();
+
+    // Show or hide the button
+    window.onscroll = function() {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        var backToTopButton = document.getElementById("back-to-top");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    document.getElementById('back-to-top').addEventListener('click', function() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    });
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
